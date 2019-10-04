@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UserStoreManager class="org.wso2.carbon.user.core.ldap.ReadOnlyLDAPUserStoreManager">
+   <Property name="ConnectionURL">ldap://10.22.22.22:389</Property>
+   <Property name="ConnectionName">CN=Usuario,OU=Genericos,OU=ABC,OU=FI,OU=Usuarios,DC=Uiotest,DC=ABCd,DC=test</Property>
+   <Property encrypted="true" name="ConnectionPassword">JRXBTeVNCNE1JUVk2RXQzVGRURVhVd0RrOF</Property>
+   <Property name="UserSearchBase">OU=Genericos,OU=TCS,OU=Filiales,OU=Usuarios,DC=Uiotest,DC=Bpichinchatest,DC=test</Property>
+   <Property name="UserNameAttribute">sAMAccountName</Property>
+   <Property name="UserNameSearchFilter">(&amp;(objectClass=user)(sAMAccountName=?))</Property>
+   <Property name="UserNameListFilter">(&amp;(objectClass=user)(sAMAccountName=*))</Property>
+   <Property name="UserDNPattern"/>
+   <Property name="DisplayNameAttribute">sAMAccountName</Property>
+   <Property name="Disabled">false</Property>
+   <Property name="ReadGroups">true</Property>
+   <Property name="GroupSearchBase">OU=Grupos,DC=Uiotest,DC=Bpichinchatest,DC=test</Property>
+   <Property name="GroupNameAttribute">cn</Property>
+   <Property name="GroupNameSearchFilter">(&amp;(objectClass=*)(cn=?))</Property>
+   <Property name="GroupNameListFilter">(objectClass=*)</Property>
+   <Property name="RoleDNPattern"/>
+   <Property name="MembershipAttribute">member</Property>
+   <Property name="MemberOfAttribute">memberOf</Property>
+   <Property name="BackLinksEnabled">false</Property>
+   <Property name="Referral">follow</Property>
+   <Property name="ReplaceEscapeCharactersAtUserLogin">true</Property>
+   <Property name="SCIMEnabled">false</Property>
+   <Property name="PasswordHashMethod">PLAIN_TEXT</Property>
+   <Property name="MultiAttributeSeparator">,</Property>
+   <Property name="MaxUserNameListLength">100</Property>
+   <Property name="MaxRoleNameListLength">100</Property>
+   <Property name="UserRolesCacheEnabled">true</Property>
+   <Property name="ConnectionPoolingEnabled">false</Property>
+   <Property name="LDAPConnectionTimeout">5000</Property>
+   <Property name="ReadTimeout">5000</Property>
+   <Property name="RetryAttempts">0</Property>
+   <Property name="CountRetrieverClass"/>
+   <Property name="java.naming.ldap.attributes.binary"/>
+   <Property name="ClaimOperationsSupported">false</Property>
+   <Property name="MembershipAttributeRange">0</Property>
+   <Property name="UserCacheExpiryMilliseconds"/>
+   <Property name="UserDNCacheEnabled">true</Property>
+   <Property name="StartTLSEnabled">false</Property>
+   <Property name="DomainName">AD</Property>
+   <Property name="Description">                AD Configs for Usario search base&#xD;
+            </Property>
+</UserStoreManager/>
